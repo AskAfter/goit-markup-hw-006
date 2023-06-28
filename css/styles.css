@@ -519,6 +519,60 @@ ul {
   background-color: var(--green-bg-clr);
 }
 
+.ftr-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.ftr-form-input {
+  display: block;
+  box-sizing: border-box;
+  height: 40px;
+  width: 264px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+
+  font-size: 12px;
+  font-family: Roboto;
+  line-height: calc(24 / 12);
+  letter-spacing: 0.48px;
+  color: var(--light-txt-clr);
+
+  border: none;
+
+  border: 1px solid var(--light-slate-bg-clr);
+
+  border-radius: 4px;
+
+  background-color: transparent;
+
+  outline-color: transparent;
+}
+
+.ftr-form-input:focus {
+  border-color: var(--ocean-bg-clr);
+  outline: none;
+}
+
+.ftr-btn {
+  min-height: 40px;
+  min-width: 165px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  gap: 16px;
+}
+
+.ftr-btn::after {
+  content: ' ';
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/plane.png);
+  background-size: contain;
+}
+
 /* Portfolio buttons */
 
 .section-prtf {
