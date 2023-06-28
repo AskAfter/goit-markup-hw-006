@@ -472,26 +472,61 @@
           </ul>
         </div>
       </section>
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop" data-modal>
         <div class="modal">
           <button class="modal-icon" type="button" data-modal-close>
             <svg width="8px" height="8px">
               <use href="./images/icons.svg#close"></use>
             </svg>
           </button>
-          <strong>Leave your contacts and we will call you back</strong>
+          <strong class="modal-title"
+            >Leave your contacts and we will call you back</strong
+          >
           <form>
             <div class="form-name">
               <div class="order-form-group">
-                <label class="form-label">
+                <label class="form-label"
+                  ><span class="form-label-name">Name</span>
                   <input
                     class="form-input"
                     type="text"
                     name="user-name"
                     placeholder="Petro Ratych"
                   />
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#person"></use>
+                  </svg>
                 </label>
-                <svg width="104px" height="56px"></svg>
+              </div>
+
+              <div class="order-form-group">
+                <label class="form-label"
+                  ><span class="form-label-name">Name</span>
+                  <input
+                    class="form-input"
+                    type="phone"
+                    name="user-phone"
+                    placeholder="+38 096 123 45 67"
+                  />
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                </label>
+              </div>
+
+              <div class="order-form-group">
+                <label class="form-label"
+                  ><span class="form-label-name">Name</span>
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    placeholder="askafter@mail.com"
+                  />
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#email"></use>
+                  </svg>
+                </label>
               </div>
               <button type="submit" class="btn modal-btn">Send</button>
             </div>
